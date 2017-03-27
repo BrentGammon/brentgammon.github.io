@@ -16,7 +16,7 @@ $(function() {
 
     // Navigation items
     siteNavItems: [
-      { name: 'Github', href: 'https://github.com/brentgammon', newWindow: false},
+      { name: 'Github', href: 'https://github.com/BrentGammon', newWindow: false},
       { name: 'About'}
     ],
 
@@ -53,7 +53,7 @@ $(function() {
 
      // If Github mode is set, your Github username and repo name.
     githubUserSettings: {
-      username: 'brentgammon',
+      username: 'BrentGammon',
       repo: 'brentgammon.github.io'
     },
 
