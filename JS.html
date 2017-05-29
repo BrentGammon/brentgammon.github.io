@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<script src="JSTEXT.js"></script>
+		<script src="game.js"></script>
+	<title>JavaScript</title>
+	<style>
+	.center{
+	text-align:center;
+	}
+	</style>
+	</head>
+		<body>
+	
+<header class="w3-container w3-blue-grey">
+  <h1>JavaScript Work</h1>
+</header>
+
+
+		<div class="w3-container w3-border center">
+<p>Online Text Editor<p>
+<a href="TEXT.html">Link to Text Editor</a>
+</div>
+
+		<div class="w3-container w3-border center">
+<div class="feature3" id="rock">
+	<h6>Play Rock,Paper,Scissors</h6>
+	<p id="game1"> </p>
+	<input class="but" type="button" name="Rock" value="Rock" onclick='rockpaperscissors(value);winCount()'>
+	<input  class="but" type="button" name="Paper" value="Paper" onclick='rockpaperscissors(value);winCount()'>
+	<input class="but" type="button" name="Scissors" value="Scissors" onclick='rockpaperscissors(value);winCount()'>
+	<p id="winInfo"></p>
+	</div>
+
+</div>
+<div class="w3-container w3-border center">
+<div class="feature2" id="random" >
+	<h6>Create a Random Person</h6>
+	<p id="person"> </p>
+	<input class="but" type="button" name="Click" value="Click" onclick='randomPerson()'>
+	<br>
+	<br>
+	</div>
+</div>
+
+<div class="w3-container w3-border center">
+<h6>Adding and Displaying an Array</h6>
+<textarea rows="4" cols="50" id="text"></textarea>
+<br>
+	<input id="sizeA" class="but" type="button" name="add" value="Add" onclick='userArrayss()'>
+	<input id="sizeA1" class="but" type="button" name="add" value="Display" onclick='displayArray()'>
+	<p id="userArrays"><p>
+	</div>
+	<br>
+</div>
+
+
+</body>
+
+
+
+</html>

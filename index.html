@@ -1,68 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CMS.js</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="css/poole.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Brent</title>
 </head>
+
 <body>
 
-  <!-- Main View -->
-  <div class="container content">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
 
-    <header class="masthead">
-      <h3 class="masthead-title">
-        <a href="#" class="cms_sitename" title="Home"></a>
-        <small class="cms_tagline"></small>
-      </h3>
-      <nav class="cms_nav"></nav>
-    </header>
 
-    <div class="cms_main"></div>
 
-    <footer class="cms_footer">
-      <small class="cms_footer_text"></small>
-    </footer>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-  </div>
+            </div><!-- navbar header-->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#me">About Me</a></li>
+                    <li><a href="#CV">Curriculum Vitae</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="http://f1.brentgammon.co.uk/">Formula 1 Site</a></li>
+                          <li><a href="http://url.brentgammon.co.uk/">URl Shortener</a></li>
+                          <li><a href="https://apps.getpebble.com/en_US/application/56980109cd56d2d9ce000058?native=false&query=formula%25201&section=watchapps">Pebble Application</a></li>
+                          <li><a href="https://play.google.com/store/apps/details?id=uk.co.brentgammon.personalproject&hl=en_GB">Random Number Generator</a></li>
+                          <li><a href="https://github.com/BrentGammon/GradingSoftware">Kent Grade Calulator</a></li>
+                          <li><a href="https://github.com/BrentGammon/8BitWarriors">2nd Year Group Software Project</a><li>
+                          <li><a href="TEXT.html">JQuery Text Editor</a><li>
+                          <li><a href="JS.html">Random Javascript</a><li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- collpase navbar collapse-->
+          </div>
+      </nav>
 
-  <!-- Page View -->
-  <script id="page-template" type="x-template">
-    <article class="page">
-      <h1 class="page-title"></h1>
-      <div class="page-content"></div>
-    </article>
-  </script>
+    <div class="text-center">
+        <div class="jumbotron">
+            <img id="pic" src="img/photo.jpg" class="img-circle" style="width:150px;height:150px">
+            <h1>Brent Gammon</h1>
+            <h3>Computing Student at University of Kent</h3>
+            <h3>Software Developer at Motability Operations</h3>
+            <p>Email: bg240@kent.ac.uk</p>
+            <a href="https://twitter.com/brent_gammon"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href="https://uk.linkedin.com/in/brent-gammon-606027b9"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+            <a href="https://github.com/BrentGammon"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 
-  <!-- Post View -->
-  <script id="post-template" type="x-template">
-    <article class="post">
-      <h1 class="post-title"></h1>
-      <time class="post-date"></time>
-      <div class="post-content"></div>
-    </article>
-  </script>
+        </div><!--jumbotron-->
+        <div class="container">
 
-  <!-- Error View -->
-  <script id="error-template" type="x-template">
-    <div class="error">
-      <b>Sorry, something went wrong :(</b>
-      <p class="error_text"></p>
-      <a href="#" class="close alert_close">&times;</a>
-    </div>
-  </script>
+            <h3 id="me">About Me</h3>
+            <p>I'm a computing student that is currently on my year in industry at Motbaility Operations as a Software Developer. Currently I'm developering proof of concepts using the latest Javascript frameworks such as Angular 2 and reactJS, Also MongoDB and NodeJS to support in the creation of the web applications. I've also had exposure to JBossFuse and the items that support it like Apache Camel. During my time at Motability Operations I want to further develop my knowleage in these areas and improve my Java programming. During my time at university I have covered a wide range of topics such object oriented programming with Java and PHP, relational databases with mySQL and PostgreSQL covering conceptual design. I have a understanding of Agile Methodogy mostly covering scrum, for my 2nd year group project we used scum to develop a 2nd platform game developed in greenfoot which can be seen on my github page.</p>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="js/marked.min.js"></script>
-  <script src="js/cms.js"></script>
-  <script src="js/config.js"></script>
+
+            <h3 id="CV">Curriculum Vitae</h3>
+            <h4>Work History/Experience</h4>
+            <h5>July - Present	 Motability Operations, London, Software Developer</h5>
+            <p>By in no ecstatic wondered disposal my speaking. Direct wholly valley or uneasy it at really. Sir wish like said dull and need make. Sportsman one bed departure rapturous situation disposing his. Off say yet ample ten ought hence. Depending in newspaper an september do existence strangers. Total great saw water had mirth happy new. Projecting pianoforte no of partiality is on. Nay besides joy society him totally six. </p>
+            <br>
+            <h5>October - June 2016	 School of Computing, Medway: Computing Workshop </h5>
+            <p>During my studies I worked for the Computing department as a Workshop Assistant this job consists of aiding first year students in completing class and assessment work by giving advice when needed and pointing them in the right direction. This role requires empathy, good listening and communication skills and the ability to explain complex situations in simple terms.</p>
+            <br>
+            <h5>July - September 2015 	 British Heart Foundation, Gravesend, Warehouse Assistant:</h5>
+            <p>I volunteered in the warehouse which consistent of moving the sold items to the sold area and replacing them in the shopfront. Also keeping the warehouse clear as this allowed for new items to be placed.</p>
+            <br>
+            <h5>2012 - 2013		 North West Kent College, Gravesend: Technical Workshop Assistant:</h5>
+            <p>During my studies at NWKC for the Professional Competence for IT and Telecoms Professionals qualification I worked in the Technical Workshop where I was responsible for repairing computers, providing advice and guidance on technical issues and solving a variety of IT problems. </p>
+
+
+            <h4>Education</h4>
+            <h4>2014-present	University of Kent, Medway</h4>
+            <p>BSc Computing with a Year in Industry </p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>
+                                <h4>First Year Results (79%)</h4></td>
+                            <td>
+                                <h4>Second Year Results (84%)</h4></td>
+                        </tr>
+                        <tr>
+                            <td>Introduction to Object-Oriented Programming - 91%</td>
+                            <td>Further Object-Oriented Programmingv - 95%</td>
+                        </tr>
+                        <tr>
+                            <td>Foundations of Computing I - 79%</td>
+                            <td>Databases Systems - 79%</td>
+                        </tr>
+                        <tr>
+                            <td>Databases and the Web - 85%</td>
+                            <td>Web Development - 90%</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Systems - 87%</td>
+                            <td>Networking - 85%</td>
+                        </tr>
+                        <tr>
+                            <td>Human Computer Interaction - 61%</td>
+                            <td>Information System Analysis - 86%</td>
+                        </tr>
+                        <tr>
+                            <td>Computer Applications - 79%</td>
+                            <td>Agile Software Development - 76%</td>
+                        </tr>
+                        <tr>
+                            <td>People and Computing - 86%</td>
+                            <td>Software Engineering Process - 87%</td>
+                        </tr>
+                        <tr>
+                            <td>Application Project - 70%</td>
+                            <td>Software Project - 81%</td>
+                        </tr>
+                </table>
+                <h3>Awards:</h3>
+                <p>School of Computing Prize - For Distinguished Stage 2 Performance</p>
+                <p>Kent Student Certificate in Volunteering Bronze - Volunteering for 25 hours</p>
+                <br>
+                <h4>2012-2014 North West Kent College, Gravesend</h4>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Qualifications</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                BTEC Subsidiary Diploma in IT - Level 3 - D* (140 UCAS Points)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Diploma in Professional Competence for IT and Telecoms Professionals
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cisco IT Essentials
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                GCSE English - D
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                GCSE Maths - C
+                            </td>
+                        </tr>
+                </table>
+                <h3>References</h3>
+                <p>Dr Anna Jordanous</p>
+                <p>Tutor and Lecturer </p>
+                <p>School of Computing, University of Kent</p>
+                <p>Medway ME4 4AG</p>
+                <p>01634202990</p>
+                <p>A.K.Jordanous@kent.ac.uk</p>
+
+
+
+                <br>
+                <h3 id="resources">Resources that I have used:</h3>
+                <h4>Books</h4>
+
+                <p>Objects First with Java A Practical Introduction using BlueJ: David Barnes and Michael Kolling</p>
+                <p>Java The Complete Reference: Herbert Schildt</p>
+                <p>UML Distilled: A Brief Guide to the Standard Object Modeling Language: Martin Fowler </p>
+                <p>The Unified Modeling Language Reference Manual: James Rumbaugh, Ivar Jacobson and Grady Booch</p>
+                <p>UML 2.0 in a Nutshell A Desktop Quick Reference: Dan Pilone and Neil Pitman</p>
+                <p>PHP and MySQL for Dynamic Web Sites: Larry Ullman</p>
+                <p>PHP and MySQL in easy steps: Mike McGrath</p>
+                <p>HTML and CSS design and build websites: John Duckett</p>
+                <p>JavaScript and JQuery interactive front end web development: John Duckett</p>
+                <p>Programming PHP: Kevin Tatroe, Peter MacIntyre and Rasmus Lerdorf</p>
+                <p>Extreme Programming Explained Embrace Change: Kent Beck</p>
+                <p>Agile Project Management For Dummies: Mark C. Layton</p>
+                <p>An Introduction To Information Systems: David Whiteley</p>
+                <p>Introduction to Operating Systems Behind the Desktop: John English</p>
+                <p>Scott Muellers Upgrading and Repairing PCs: Scott Mueller </p>
+
+
+
+                <h4>Web Sites</h4>
+
+                <a href="https://www.codecademy.com ">
+                    <p>Codecademy
+                    </p>
+                </a>
+                <a href="http://www.w3schools.com">
+                    <p>W3Schools
+                    </p>
+                </a>
+                <a href="http://www.freecodecamp.com/">
+                    <p>Freecodecamp
+                    </p>
+                </a>
+
+            </div>
+        </div>
 </body>
+
 </html>
