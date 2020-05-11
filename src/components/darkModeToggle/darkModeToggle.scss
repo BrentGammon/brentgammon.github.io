@@ -1,0 +1,23 @@
+.dark-mode-toggle, .dark-mode-toggle-dark {
+  margin: 10px;
+  svg {
+    border: 1px solid;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 100px;
+
+  }
+}
+.dark-mode-toggle {
+  svg {
+    color: #000000;
+    border-color: #000000;
+  }
+}
+
+.dark-mode-toggle-dark {
+  svg {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+}
